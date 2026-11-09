@@ -381,7 +381,7 @@ const SITE = {
     },
     {
       title: "SmartCampus LMS",
-      img: "images/smartcampus-lms.jpg",
+      img: "images/Smartcampus-lms.jpg",
       category: "UI/UX",
       year: "2024",
       summary: "Campus Learning Management System UI/UX in Figma.",
