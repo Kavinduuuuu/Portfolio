@@ -2,7 +2,7 @@
 
 ## Live Portfolio
 
-**[Visit My Portfolio](https://kavinduthathsara.dev)**
+**[Visit My Portfolio](https://kavinduuuuu.github.io/Portfolio/)**
 
  If you find my work interesting, feel free to explore my projects and connect with me!
 
