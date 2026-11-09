@@ -326,7 +326,7 @@ const SITE = {
   projects: [
     {
       title: "VarsitySport-Agent",
-      img: "images/varsitysport-agent.jpg",
+      img: "images/VarsitySport-Agent.jpg",
       category: "AI / RAG",
       year: "2024",
       summary: "University sports management & safety advisory AI with RAG.",
@@ -337,7 +337,7 @@ const SITE = {
     },
     {
       title: "Sports Injury Recovery Assistant",
-      img: "images/sports-injury-assistant.jpg",
+      img: "images/Sports-Injury-Recovery-Assistant.jpg",
       category: "AI / RAG",
       year: "2024",
       summary: "AI-assisted clinical recovery guidance using agentic RAG.",
@@ -348,7 +348,7 @@ const SITE = {
     },
     {
       title: "Encrypted Network Traffic Recognition",
-      img: "images/encrypted-traffic.jpg",
+      img: "images/Encrypted-Network-Traffic-Recognition.jpg",
       category: "AI / RAG",
       year: "2024",
       summary: "Machine learning classification for encrypted network flows.",
@@ -359,7 +359,7 @@ const SITE = {
     },
     {
       title: "GameEdge",
-      img: "images/gameedge.jpg",
+      img: "images/GameEdge.jpg",
       category: "Full-stack",
       year: "2024",
       summary: "Gaming cafe management and e-sports booking platform.",
@@ -370,7 +370,7 @@ const SITE = {
     },
     {
       title: "DailyCalc LK",
-      img: "images/dailycalc-lk.jpg",
+      img: "images/DailyCalc-LK.jpg",
       category: "DevOps",
       year: "2024",
       summary: "Containerized utility calculator with CI/CD pipeline.",
@@ -392,7 +392,7 @@ const SITE = {
     },
     {
       title: "Wallify Paint Shop",
-      img: "images/wallify-paint-shop.jpg",
+      img: "images/Wallify-Paint-Shop.jpg",
       category: "UI/UX",
       year: "2024",
       summary: "E-commerce & color visualizer product interface.",
@@ -403,7 +403,7 @@ const SITE = {
     },
     {
       title: "Share2Care — Meal Bank Finder",
-      img: "images/share2care.jpg",
+      img: "images/Share2Care-Meal-Bank-Finder.jpg",
       category: "UI/UX",
       year: "2024",
       summary: "Community food aid mobile platform design.",
@@ -1017,7 +1017,7 @@ $('#cf').onsubmit = e => {
     else showProfile();
   });
   showProfile();
-  
+
   // Load the About video only when it approaches the screen
 const aboutVideo = document.getElementById("about-video");
 
