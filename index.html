@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kavindu Thathsara — Full-Stack Developer &amp; UI/UX Designer</title>
+<meta name="description" content="Portfolio of Kandage Kavindu Thathsara — IT undergraduate, full-stack developer and UI/UX designer in Colombo, Sri Lanka.">
+<link rel="canonical" href="https://kavinduthathsara.dev">
+<meta name="theme-color" content="#090909">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kavindu Thathsara — Full-Stack Developer &amp; UI/UX Designer">
+<meta property="og:description" content="Full-stack web apps, AI (RAG) systems and human-centric UI/UX design.">
+<meta property="og:image" content="Image/ezgif-frame-001.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kandage Kavindu Thathsara","url":"https://kavinduthathsara.dev","jobTitle":"Full-Stack Developer & UI/UX Designer","sameAs":["https://github.com/Kavinduuuuu","https://linkedin.com/in/kavindu-thathsara","https://instagram.com/kavinduuu_"]}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&family=Manrope:wght@400;600;800&family=Orbitron:wght@800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- FIXED BACKGROUND 3D SCROLL CANVAS & GLOWS -->
+<canvas id="hero-canvas" aria-hidden="true"></canvas>
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="page-glass" aria-hidden="true"></div>
+<div class="ambient-glow glow-hero-solar" aria-hidden="true"></div>
+<div class="ambient-glow glow-hero-accent" aria-hidden="true"></div>
+
+<!-- HEADER / NAVBAR -->
+<header><div class="w nav">
+<a href="#top" class="logo" id="logo"></a>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#work">Work</a></li><li><a href="#tools">Tools</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="r"><a class="btn p" href="Kavindu_Thathsara Resume.pdf" download="Kavindu_Thathsara Resume.pdf">Download CV</a><button class="btn" id="menu" aria-expanded="false" aria-controls="nav">Menu</button></div>
+</div></header>
+
+<!-- MAIN CONTENT LAYER -->
+<main id="top">
+<section class="hero" id="home">
+  <!-- Subtle animated background: faint blue light particles & slow-moving cyber grid (behind text, low opacity) -->
+  <div class="hero-bg-fx" aria-hidden="true">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-glow-spot hero-glow-blue"></div>
+    <div class="hero-glow-spot hero-glow-lime"></div>
+    <canvas id="heroParticleCanvas" class="hero-particle-canvas"></canvas>
+  </div>
+
+  <div class="w hero-layout">
+    <!-- LEFT COLUMN: Content (in exact requested order) -->
+    <div class="hero-content">
+      <!-- 1. Small badge pill -->
+      <div class="hero-badge">
+        <span class="hero-badge-symbol" aria-hidden="true">✦</span>
+        <span>UI/UX · AI · Web Development</span>
+      </div>
+
+      <!-- 2. Small tag line, letter-spaced -->
+      <p class="hero-tagline">KANDAGE KAVINDU THATHSARA</p>
+
+      <!-- 3. H1, three stacked lines, uppercase -->
+      <h1 class="hero-headline">
+        <span class="hero-headline-line hero-headline-1">WHERE DESIGN</span>
+        <span class="hero-headline-line hero-headline-2">MEETS</span>
+        <span class="hero-headline-line hero-headline-3"><span class="hero-accent-lime">INTELLIGENCE</span></span>
+      </h1>
+
+      <!-- 4. Typing animation line: "I DO" + rotating role + blinking cursor -->
+      <div class="hero-typing-line" aria-live="polite">
+        <span class="hero-typing-prefix">I DO</span>
+        <span class="hero-typing-target" id="heroTypingRole">UI/UX Design</span>
+        <span class="hero-typing-cursor" aria-hidden="true">|</span>
+      </div>
+
+      <!-- 5. Subtext (max 2 lines) -->
+      <p class="hero-subtext">UI/UX Design Intern · IT Undergraduate · AI Image &amp; Video Creator</p>
+
+      <!-- 6. CTA buttons -->
+      <div class="hero-actions">
+        <a class="hero-btn hero-btn-primary" href="#projects">
+          <span>VIEW MY WORK</span>
+          <span class="hero-btn-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+        <a class="hero-btn hero-btn-secondary" href="#contact">
+          <span>CONTACT ME</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: Cyber HUD Stats Card -->
+    <div class="hero-visual" aria-label="Profile stats and status card">
+      <div class="hud-card" id="hudCard">
+
+        <div class="hud-viewport">
+          <div class="hud-track" id="hudTrack">
+
+            <!-- SLIDE 1: profile stats -->
+            <div class="hud-slide" data-slide="0">
+        <!-- Top bar: system status -->
+        <div class="hud-topbar">
+          <span class="hud-radar-dot" aria-hidden="true"></span>
+          <span class="hud-status-text">SYSTEM&nbsp;ONLINE</span>
+          <span class="hud-status-badge">OPEN FOR ROLES</span>
+        </div>
+
+        <!-- Divider line -->
+        <div class="hud-divider"></div>
+
+        <!-- Identity block -->
+        <div class="hud-identity">
+          <span class="hud-label">OPERATOR</span>
+          <span class="hud-name">K. KAVINDU THATHSARA</span>
+          <span class="hud-role-text">UI/UX Design Intern · IT Undergraduate</span>
+        </div>
+
+        <!-- Stats grid: 2x2 -->
+        <div class="hud-stats-grid">
+          <div class="hud-stat">
+            <span class="hud-stat-val">10<span class="hud-stat-plus">+</span></span>
+            <span class="hud-stat-label">UI/UX &amp; Web<br>Projects</span>
+          </div>
+          <div class="hud-stat">
+            <span class="hud-stat-val">20<span class="hud-stat-plus">+</span></span>
+            <span class="hud-stat-label">AI &amp; Industry<br>Tech Arsenal</span>
+          </div>
+          <div class="hud-stat">
+            <span class="hud-stat-val">2<span class="hud-stat-plus">x</span></span>
+            <span class="hud-stat-label">Verified Cyber<br>Credentials</span>
+          </div>
+          <div class="hud-stat">
+            <span class="hud-stat-val hud-stat-icon">&#9889;</span>
+            <span class="hud-stat-label">Leadership<br>Roles Active</span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="hud-divider"></div>
+
+        <!-- Tags row -->
+        <div class="hud-tags">
+          <span class="hud-tag">Figma</span>
+          <span class="hud-tag">Next.js</span>
+          <span class="hud-tag">AI Video Gen</span>
+          <span class="hud-tag">CTF 2026</span>
+          <span class="hud-tag">Prompt Eng.</span>
+        </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Full-card intro video layer -->
+        <div class="hud-video-layer" id="hudVideoLayer" aria-hidden="true">
+          <video id="hudVideo" class="hud-video" muted playsinline preload="auto" disablepictureinpicture disableremoteplayback poster="Image/intro-poster.jpg">
+            <source src="Image/intro.mp4" type="video/mp4">
+            <source src="Image/intro.webm" type="video/webm">
+          </video>
+        </div>
+
+        <!-- Animated scan line -->
+        <div class="hud-scanline" aria-hidden="true"></div>
+
+        <!-- Corner accents -->
+        <span class="hero-corner hero-corner-tl"></span>
+        <span class="hero-corner hero-corner-tr"></span>
+        <span class="hero-corner hero-corner-bl"></span>
+        <span class="hero-corner hero-corner-br"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work"><span id="projects" style="position:relative;top:-80px"></span><div class="w"><h2>Selected <span>Work</span></h2>
+<div class="f" id="flt" role="group" aria-label="Filter projects"></div>
+<label for="q" class="tag">Search</label><input id="q" type="search" placeholder="Search projects, technologies or domains">
+<div class="g" id="grid"></div></div></section>
+
+
+<!-- ==========================================================================
+     HUD TOOLS & SKILLS ↘ RIBBON (MATCHES IMAGE 3 EXACT SPEC)
+     ========================================================================== -->
+<section id="tools" class="tools-section">
+  <div class="w">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:14px;flex-wrap:wrap;gap:12px">
+      <div>
+        <span class="tag">NEXT-GEN ARSENAL</span>
+        <h2 style="margin:4px 0 0;font-size:clamp(1.6rem,3.2vw,2.4rem)">TOOLS &amp; <span>SKILLS</span></h2>
+      </div>
+      <div class="ts-filter-bar" id="ts-filter-bar">
+        <button class="ts-filter-btn active" data-cat="featured">⭐ Featured (Image 3)</button>
+        <button class="ts-filter-btn" data-cat="ai-video">🎬 AI Video &amp; Motion</button>
+        <button class="ts-filter-btn" data-cat="ai-image">🎨 AI Image &amp; Design</button>
+        <button class="ts-filter-btn" data-cat="llm-rag">⚡ LLMs, RAG &amp; Agents</button>
+        <button class="ts-filter-btn" data-cat="industry">💻 IT Industry &amp; Undergrad</button>
+        <button class="ts-filter-btn" data-cat="cyber">🛡️ Cybersecurity &amp; CTF</button>
+        <button class="ts-filter-btn" data-cat="all">⚡ All Tools</button>
+      </div>
+    </div>
+
+    <!-- The Exact Image 3 Strip -->
+    <div class="ts-ribbon">
+      <div class="ts-header">
+        TOOLS<br>&amp; SKILLS <span class="arr">↘</span>
+      </div>
+      <div class="ts-track" id="ts-track">
+        <!-- Rendered dynamically by JavaScript with SVGs -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about"><div class="w two"><div><h2>About <span>Me</span></h2><p class="lead" id="about-t"></p>
+<div class="ab-extra" id="about-extra"></div>
+<video id="about-video" class="about-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" disablepictureinpicture>
+  <source src="Image/about-video.mov" type='video/quicktime; codecs="hvc1"'>
+  <source src="Image/about-video.webm" type="video/webm">
+</video></div><div class="sk" id="skills"></div></div></section>
+
+<section id="experience"><div class="w"><h2>Experience &amp; <span>Education</span></h2><div id="tl"></div></div></section>
+
+<section id="contact"><div class="w two"><div><h2>Let's <span>Connect</span></h2><p class="lead">Open to full-stack and UI/UX internship roles. Send a direct inquiry or reach out through my verified accounts below.</p><div class="cl" id="cl"></div></div>
+<form id="cf" novalidate><label for="fn">Your name</label><input id="fn" autocomplete="name" required>
+<label for="fe">Your email</label><input id="fe" type="email" autocomplete="email" required>
+<label for="fm">Message</label><textarea id="fm" rows="4" required></textarea>
+<button class="btn p" type="submit" style="margin-top:16px">Send message</button><div id="st" role="status" aria-live="polite"></div></form></div></section>
+</main>
+
+<footer><div class="w"><span id="ft"></span><a href="#top">Back to top</a></div></footer>
+<dialog id="dlg" aria-labelledby="dt"><div id="dc"></div></dialog>
+
+<!-- CERTIFICATE LIGHTBOX MODAL -->
+<dialog id="cert-dlg" aria-labelledby="cert-dt">
+  <div class="cert-dlg-content" id="cert-modal-content"></div>
+</dialog>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
