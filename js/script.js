@@ -1017,4 +1017,26 @@ $('#cf').onsubmit = e => {
     else showProfile();
   });
   showProfile();
+  
+  // Load the About video only when it approaches the screen
+const aboutVideo = document.getElementById("about-video");
+
+if (aboutVideo) {
+  const videoObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        aboutVideo.querySelectorAll("source[data-src]").forEach((source) => {
+          source.src = source.dataset.src;
+          source.removeAttribute("data-src");
+        });
+
+        aboutVideo.load();
+        aboutVideo.play().catch(() => {});
+        observer.unobserve(aboutVideo);
+      }
+    });
+  }, { rootMargin: "200px" });
+
+  videoObserver.observe(aboutVideo);
+}
 })();

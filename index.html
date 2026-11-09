@@ -157,7 +157,9 @@
 
         <!-- Full-card intro video layer -->
         <div class="hud-video-layer" id="hudVideoLayer" aria-hidden="true">
-          <video id="hudVideo" class="hud-video" muted playsinline preload="auto" disablepictureinpicture disableremoteplayback poster="Image/intro-poster.jpg">
+          <video id="hudVideo" class="hud-video" muted playsinline preload="none"
+       disablepictureinpicture disableremoteplayback
+       poster="Image/intro-poster.jpg">
             <source src="Image/intro.mp4" type="video/mp4">
             <source src="Image/intro.webm" type="video/webm">
           </video>
@@ -217,10 +219,15 @@
 
 <section id="about"><div class="w two"><div><h2>About <span>Me</span></h2><p class="lead" id="about-t"></p>
 <div class="ab-extra" id="about-extra"></div>
-<video id="about-video" class="about-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" disablepictureinpicture>
-  <source src="Image/about-video.mov" type='video/quicktime; codecs="hvc1"'>
-  <source src="Image/about-video.webm" type="video/webm">
-</video></div><div class="sk" id="skills"></div></div></section>
+<video id="about-video" class="about-video"
+       autoplay muted loop playsinline
+       preload="none"
+       aria-hidden="true"
+       disablepictureinpicture>
+  <source data-src="Image/about-video.mp4" type="video/mp4">
+  <source data-src="Image/about-video.webm" type="video/webm">
+</video>
+</div><div class="sk" id="skills"></div></div></section>
 
 <section id="experience"><div class="w"><h2>Experience &amp; <span>Education</span></h2><div id="tl"></div></div></section>
 
