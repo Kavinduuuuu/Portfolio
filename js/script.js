@@ -2,7 +2,7 @@
    1. 3D FRAME CANVAS SCROLL ENGINE (220 FRAMES)
    ============================================================================ */
 (() => {
-  const FRAME_COUNT = 270;
+  const FRAME_COUNT = 220
   const canvas = document.getElementById('hero-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d', { alpha: true });
